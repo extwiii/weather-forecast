@@ -1,10 +1,33 @@
 .App {
   text-align: center;
+  margin: 3% auto;
+  width: 824px;
+  background: #FFF;
+  border-radius: 3px;
+  box-shadow: 5px 5px 5px #CCC;
+  padding: 20px;
+  height: 700px;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+.App-current {
+  margin: 3px;
+  background-color: #DDD;
+  float:left;
+  width: 97px;
+  height: 120px;
+}
+
+@media (max-width: 900px) {
+  .App {
+    width: 412px;
+    height: 1400px;
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 350px) {
+  .App {
+    width: 95%;
+    font-size: 0.75em;
+  }
 }
