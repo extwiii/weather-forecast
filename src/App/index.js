@@ -12,7 +12,7 @@ class App extends Component {
 
   componentDidMount() {
     const id = 'APPID=b24a3e7e489fede0d3de1d0840814c29';
-    const url = `http://api.openweathermap.org/data/2.5/forecast?q=Istanbul&mode=json&units=metric&${id}`;
+    const url = `https://api.openweathermap.org/data/2.5/forecast?q=Istanbul&mode=json&units=metric&${id}`;
     console.log(url);
     axios.get(url)
       .then((response) => {

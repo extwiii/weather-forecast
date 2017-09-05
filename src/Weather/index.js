@@ -17,7 +17,7 @@ function Weather(props) {
           {title}
         </h3>
       }
-      <img src={`http://openweathermap.org/img/w/${icon}.png`} alt={icon} />
+      <img src={`https://openweathermap.org/img/w/${icon}.png`} alt={icon} />
       <p>{temperature} &deg;C</p>
     </div>
   );
