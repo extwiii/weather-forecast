@@ -1,9 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import './Weather.css';
 
 function Weather(props) {
   const { title,
-    weather,
+    icon,
     temperature } = props;
 
   return (
@@ -16,7 +17,7 @@ function Weather(props) {
           {title}
         </h3>
       }
-      <p>{weather} </p>
+      <img src={`http://openweathermap.org/img/w/${icon}.png`} alt={icon} />
       <p>{temperature} &deg;C</p>
     </div>
   );
@@ -24,7 +25,7 @@ function Weather(props) {
 
 Weather.propTypes = {
   title: PropTypes.string.isRequired,
-  weather: PropTypes.string.isRequired,
+  icon: PropTypes.string.isRequired,
   temperature: PropTypes.number.isRequired,
 };
 

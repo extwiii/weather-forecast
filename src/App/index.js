@@ -37,7 +37,7 @@ class App extends Component {
               <div className="App-current" >
                 <Weather
                   title="Now"
-                  weather={weather.weather[0].main}
+                  icon={weather.weather[0].icon}
                   temperature={weather.main.temp}
                 />
               </div> :
@@ -45,14 +45,14 @@ class App extends Component {
                 <div className="App-current">
                   <Weather
                     title={moment.unix(weather.dt).format('ddd')}
-                    weather={weather.weather[0].main}
+                    icon={weather.weather[0].icon}
                     temperature={weather.main.temp}
                   />
                 </div> :
                 <div className="App-current">
                   <Weather
                     title={moment.unix(weather.dt).format('kk')}
-                    weather={weather.weather[0].main}
+                    icon={weather.weather[0].icon}
                     temperature={weather.main.temp}
                   />
                 </div>
